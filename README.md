@@ -24,9 +24,26 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 ### LAYOUT
 
+**Aspect Ratio**
+
+- .aspect-[auto|square|video]
+
 **Container**
 
 - .container
+
+**Columns**
+
+- .columns-[1|2|3|4|5|6|7|8|9|10|11|12|auto|3xs|2xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl]
+
+**Break After & Before & Inside**
+
+- .break-[after|before]-[auto|avoid|all|avoid-page|page|left|right|column]
+- .break-inside-[auto|avoid|avoid-page|avoid-column]
+
+**Box Decoration Break**
+
+- .box-decoration-[clone|slice]
 
 **Box Sizing**
 
@@ -34,34 +51,21 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Display**
 
-- .block
-- .inline-block
-- .inline
-- .flex
-- .inline-flex
-- .table
-- .table-caption
-- .table-cell
-- .table-column
-- .table-column-group
-- .table-footer-group
-- .table-header-group
-- .table-row-group
-- .table-row
-- .flow-root
-- .grid
-- .inline-grid
-- .contents
-- .hidden
+- .[  |inline]-[  |block|flex|table|grid]
+- .table-[caption|cell|column|column-group|footer-group|header-group|row-group|row]
+- .[flow-root|contents|list-item|hidden]
 
 **Floats**
 
 - .float-[right|left|none]
-- .clearfix
 
 **Clear**
 
 - .clear-[left|right|both|none]
+
+**Isolation**
+
+- .isolation-[  |auto]
 
 **Object Fit**
 
@@ -69,51 +73,29 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Object Position**
 
-- .object-bottom
-- .object-center
-- .object-left
-- .object-left-bottom
-- .object-left-top
-- .object-right
-- .object-right-bottom
-- .object-right-top
-- .object-top
+- .object-[bottom|center|top]
+- .object-[left|right]-[  |bottom|top]
 
 **Overflow**
 
-- .overflow-[auto|hidden|visible|scroll]
-- .overflow-x-[auto|hidden|visible|scroll]
-- .overflow-y-[auto|hidden|visible|scroll]
-- .scrolling-[touch|auto]
+- .overflow-[  |x|y]-[auto|hidden|clip|visible|scroll]
 
 **Overscroll Behavior**
 
-- .overscroll-[auto|contain|none]
-- .overscroll-y-[auto|contain|none]
-- .overscroll-x-[auto|contain|none]
+- .overscroll-[  |x|y]-[auto|contain|none]
 
 **Position**
 
-- .static
-- .fixed
-- .absolute
-- .relative
-- .sticky
+- .[static|fixed|absolute|relative|sticky]
 
 **Top / Right / Bottom / Left**
 
-- .inset-[0|auto]
-- .inset-y-[0|auto]
-- .inset-x-[0|auto]
-- .top-[0|auto]
-- .right-[0|auto]
-- .bottom-[0|auto]
-- .left-[0|auto]
+- .inset-[  |x|y]-[*themeSpacing-0_96*|auto|1/2|1/3|2/3|1/4|2/4|3/4|full]
+- .[top|right|bottom|left]-[*themeSpacing-0_96*|auto|1/2|1/3|2/3|1/4|2/4|3/4|full]
 
 **Visibility**
 
-- .visible
-- .invisible
+- .[visible|invisible]
 
 **Z-index**
 
@@ -123,40 +105,34 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 > Make sure to use the `.flex` class with the classes below!
 
+**Flex Basis**
+
+- .basis-[*themeSpacing-0_96*|auto|n/2|n/3|n/4|n/5|n/6|n/12|full]
+
 **Flex Direction**
 
-- .flex-row
-- .flex-row-reverse
-- .flex-col
-- .flex-col-reverse
+- .flex-[row|col]-[  |reverse]
 
 **Flex Wrap**
 
-- .flex-wrap
-- .flex-wrap-reverse
-- .flex-no-wrap
+- .flex-wrap-[  |reverse]
+- .flex-nowrap
 
 **Flex**
 
-- .flex-1
-- .flex-auto
-- .flex-initial
-- .flex-none
+- .flex-[1|auto|initial|none]
 
 **Flex Grow**
 
-- .flex-grow-0
-- .flex-grow
+- .flex-grow-[  |0]
 
 **Flex Shrink**
 
-- .flex-shrink-0
-- .flex-shrink
+- .flex-shrink-[  |0]
 
 **Order**
 
-- .order-[1|2|3|4|5|6|7|8|9|10|11|12]
-- .order-[first|last|none]
+- .order-[1|2|3|4|5|6|7|8|9|10|11|12|first|last|none]
 
 ### GRID
 
@@ -168,8 +144,7 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 - .col-auto
 - .col-span-[1|2|3|4|5|6|7|8|9|10|11|12|full]
-- .col-start-[1|2|3|4|5|6|7|8|9|10|11|12|13|auto]
-- .col-end-[1|2|3|4|5|6|7|8|9|10|11|12|13|auto]
+- .col-[start|end]-[1|2|3|4|5|6|7|8|9|10|11|12|13|auto]
 
 **Grid Template Rows**
 
@@ -179,37 +154,31 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 - .row-auto
 - .row-span-[1|2|3|4|5|6|full]
-- .row-start-[1|2|3|4|5|6|7|auto]
-- .row-end-[1|2|3|4|5|6|7|auto]
+- .row-[start|end]-[1|2|3|4|5|6|7|auto]
 
 **Grid Auto Flow**
 
-- .grid-flow-row
-- .grid-flow-col
-- .grid-flow-row-dense
-- .grid-flow-col-dense
+- .grid-flow-[row|col]-[  |dense]
 
-**Grid Auto Columns**
+**Grid Auto Columns & Rows**
 
-- .auto-cols-auto
-- .auto-cols-min
-- .auto-cols-max
-- .auto-cols-fr
-
-**Grid Auto Rows**
-
-- .auto-rows-auto
-- .auto-rows-min
-- .auto-rows-max
-- .auto-rows-fr
+- .auto-[cols|rows]-[auto|min|max|fr]
 
 **Gap**
 
-- .gap-[0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64|px]
-- .gap-x-[0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64|px]
-- .gap-y-[0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64|px]
+- .gap-[  |x|y]-[*themeSpacing-0_96*]
 
 ### BOX ALIGNMENT
+##(justify)=>(x) & (  |content)=>(y) & (place)=>(xy) 
+##content
+- .[justify|content]-[start|end|center|between|around|evenly]
+- .place-content-[start|end|center|between|around|evenly|stretch]
+##items
+- .[justify|place]-items-[start|end|center|stretch]
+- .items-[start|end|center|stretch|baseline]
+##self
+- .[justify|place]-self-[auto|start|end|center|stretch]
+- .self-[auto|start|end|center|stretch|baseline]
 
 **Justify Content**
 
@@ -217,7 +186,7 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Justify Items**
 
-- .justify-items-[auto|start|end|center|stretch]
+- .justify-items-[start|end|center|stretch]
 
 **Justify Self**
 
@@ -233,7 +202,7 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Align Self**
 
-- .self-[auto|start|end|center|stretch]
+- .self-[auto|start|end|center|stretch|baseline]
 
 **Place Content**
 
@@ -241,7 +210,7 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Place Items**
 
-- .place-items-[auto|start|end|center|stretch]
+- .place-items-[start|end|center|stretch]
 
 **Place Self**
 
@@ -251,69 +220,62 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Padding**
 
-- .[p|py|px|pt|pr|pb|pl]-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|px]
+- .p[  |y|x|t|r|b|l]-[*themeSpacing-0_96*]
 
 **Margin**
 
-- .[m|my|mx|mt|mr|mb|ml]-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|auto|px]
-- .-[m|my|mx|mt|mr|mb|ml]-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|px]
+- .m[  |y|x|t|r|b|l]-[*themeSpacing-0_96*|auto]
+- .-m[  |y|x|t|r|b|l]-[*themeSpacing-0_96*]
 
 **Space Between**
 
-- .space-[x|y]-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|px|reverse]
-- .-space-[x|y]-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|px]
+- .space-[x|y]-[*themeSpacing-0_96*|reverse]
+- .-space-[x|y]-[*themeSpacing-0_96*]
 
 ### SIZING
 
 **Width**
 
-- .w-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|auto|px]
-- .w-[1/2|1/3|2/3|1/4|2/4|3/4]
-- .w-[1/5|2/5|3/5|4/5]
-- .w-[1/6|2/6|3/6|4/6|5/6]
-- .w-[1/12|2/12|3/12|4/12|5/12|6/12|7/12|8/12|9/12|10/12|11/12]
-- .w-[full|screen]
+- .w-[*themeSpacing-0_96*|auto|n/2|n/3|n/4|n/5|n/6|n/12|full|screen|min|max|fit]
 
 **Min-Width**
 
-- .min-w-[0|full]
+- .min-w-[0|full|min|max|fit]
 
 **Max-Width**
 
-- .max-w-[none|xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl|full]
-- .max-w-screen-[sm|md|lg|xl]
+- .max-w-[0|none|xs|sm|md|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|full|min|max|fit|prose]
+- .max-w-screen-[sm|md|lg|xl|2xl]
 
 **Height**
 
-- .h-[0|1|2|3|4|5|6|10|12|16|20|24|32|40|48|56|64|auto|px|full|screen]
+- .h-[*themeSpacing-0_96*|auto|n/2|n/3|n/4|n/5|n/6|full|screen|min|max|fit]
 
 **Min-Height**
 
-- .min-h-[0,full,screen]
+- .min-h-[0|full|screen|min|max|fit]
 
 **Max-Height**
 
-- .max-h-[full,screen]
+- .max-h-[*themeSpacing-0_96*|full|screen|min|max|fit]
 
 ### TYPOGRAPHY
 
 **Font Family**
 
-- .font[sans|serif|mono]
+- .font-[sans|serif|mono]
 
 **Font Size**
 
-- .text-[xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl]
+- .text-[xs|sm|base|lg|xl|2xl|3xl|4xl|5xl|6xl|7xl|8xl|9xl]
 
 **Font Smoothing**
 
-- .antialiased
-- .subpixel-antialiased
+- .[  |subpixel]-antialiased
 
 **Font Style**
 
-- .italic
-- .not-italic
+- .[  |not]-italic
 
 **Font Weight**
 
@@ -321,15 +283,9 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Font Variant Numeric**
 
-- .normal-nums
-- .ordinal
-- .slashed-zero
-- .lining-nums
-- .oldstyle-nums
-- .proportional-nums
-- .tabular-nums
-- .diagonal-fractions
-- .stacked-fractions
+- .[normal|lining|oldstyle|proportional|tabular]-nums
+- .[ordinal|slashed-zero]
+- .[diagonal|stacked]-fractions
 
 **Letter Spacing**
 
@@ -347,23 +303,36 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 - .list-[inside|outside]
 
-**Placeholder Color**
+[//]: # (**Placeholder Color**)
 
-- .placeholder-[transparent|current|black|white]
-- .placeholder-gray-[100|200|300|400|500|600|700|800|900]
-- .placeholder-red-[100|200|300|400|500|600|700|800|900]
-- .placeholder-orange-[100|200|300|400|500|600|700|800|900]
-- .placeholder-yellow-[100|200|300|400|500|600|700|800|900]
-- .placeholder-green-[100|200|300|400|500|600|700|800|900]
-- .placeholder-teal-[100|200|300|400|500|600|700|800|900]
-- .placeholder-blue-[100|200|300|400|500|600|700|800|900]
-- .placeholder-indigo-[100|200|300|400|500|600|700|800|900]
-- .placeholder-purple-[100|200|300|400|500|600|700|800|900]
-- .placeholder-pink-[100|200|300|400|500|600|700|800|900]
+[//]: # ()
+[//]: # (- .placeholder-[transparent|current|black|white])
 
-**Placeholder Opacity**
+[//]: # (- .placeholder-gray-[100|200|300|400|500|600|700|800|900])
 
-- .placeholder-opacity-[0|25|50|75|100]
+[//]: # (- .placeholder-red-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-orange-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-yellow-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-green-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-teal-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-blue-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-indigo-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-purple-[100|200|300|400|500|600|700|800|900])
+
+[//]: # (- .placeholder-pink-[100|200|300|400|500|600|700|800|900])
+
+[//]: # ()
+[//]: # (**Placeholder Opacity**)
+
+[//]: # ()
+[//]: # (- .placeholder-opacity-[0|25|50|75|100])
 
 **Text Align**
 
@@ -372,46 +341,56 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 **Text Color**
 
 - .text-[transparent|current|black|white]
-- .text-gray-[100|200|300|400|500|600|700|800|900]
-- .text-red-[100|200|300|400|500|600|700|800|900]
-- .text-orange-[100|200|300|400|500|600|700|800|900]
-- .text-yellow-[100|200|300|400|500|600|700|800|900]
-- .text-green-[100|200|300|400|500|600|700|800|900]
-- .text-teal-[100|200|300|400|500|600|700|800|900]
-- .text-blue-[100|200|300|400|500|600|700|800|900]
-- .text-indigo-[100|200|300|400|500|600|700|800|900]
-- .text-purple-[100|200|300|400|500|600|700|800|900]
-- .text-pink-[100|200|300|400|500|600|700|800|900]
-
-**Text Opacity**
-
-- .text-opacity-[0|25|50|75|100]
+- .text-[*themeColors*]-[100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
 
 **Text Decoration**
 
-- .underline
+- .[under|no-under|over]line
 - .line-through
-- .no-underline
+
+**Text Decoration Color**
+
+- .decoration-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
+
+**Text Decoration Style**
+
+- .decoration-[solid|double|dotted|dashed|wavy]
+
+**Text Decoration Thickness**
+
+- .decoration-[auto|from-font|0|1|2|4|8]
+
+**Text Underline Offset**
+
+- .underline-offset-[auto|0|1|2|4|8]
+
 
 **Text Transform**
 
-- .uppercase
-- .lowercase
+- .[upper|lower|normal-]case
 - .capitalize
-- .normal-case
+
+**Text Indent**
+
+- .indent-[*themeSpacing-0_96*]
+
 
 **Vertical Align**
 
-- .align-[baseline|top|middle|bottom|text-top|text-bottom]
+- .align-[baseline|top|middle|bottom|text-top|text-bottom|sub|super]
 
 **Whitespace**
 
-- .whitespace-[normal|no-wrap|pre|pre-line|pre-wrap]
+- .whitespace-[normal|nowrap|pre|pre-line|pre-wrap]
 
 **Word Break**
 
 - .break-[normal|words|all]
-- .truncate
+
+**Content**
+
+- .content-none
+
 
 ### BACKGROUNDS
 
@@ -425,42 +404,22 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Background Color**
 
-- .bg-[transparent|current|black|white]
-- .bg-gray-[100|200|300|400|500|600|700|800|900]
-- .bg-red-[100|200|300|400|500|600|700|800|900]
-- .bg-orange-[100|200|300|400|500|600|700|800|900]
-- .bg-yellow-[100|200|300|400|500|600|700|800|900]
-- .bg-green-[100|200|300|400|500|600|700|800|900]
-- .bg-teal-[100|200|300|400|500|600|700|800|900]
-- .bg-blue-[100|200|300|400|500|600|700|800|900]
-- .bg-indigo-[100|200|300|400|500|600|700|800|900]
-- .bg-purple-[100|200|300|400|500|600|700|800|900]
-- .bg-pink-[100|200|300|400|500|600|700|800|900]
+- .bg-[inherit|transparent|current|black|white]
+- .bg-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
 
-**Background Opacity**
+**Background Origin**
 
-- .bg-opacity-[0|25|50|75|100]
+- .bg-origin-[border|padding|content]
 
 **Background Position**
 
-- .bg-bottom
-- .bg-center
-- .bg-left
-- .bg-left-bottom
-- .bg-left-top
-- .bg-right
-- .bg-right-bottom
-- .bg-right-top
-- .bg-top
+- .bg-[bottom|center|top]
+- .bg-[left|right]-[bottom|top]
 
 **Background Repeat**
 
-- .bg-repeat
+- .bg-repeat-[  |x|y|round|space]
 - .bg-no-repeat
-- .bg-repeat-x
-- .bg-repeat-y
-- .bg-repeat-round
-- .bg-repeat-space
 
 **Background Size**
 
@@ -469,146 +428,166 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 **Background Image**
 
 - .bg-none
-- .bg-gradient-to-[t|tr|r|br|b|bl|l|tl]
+- .bg-gradient-to-[t|b][  |r|l]
+- .bg-gradient-to-[r|l]
 
 **Gradient Color Stops**
 
-- .from-[transparent|current|black|white]
-- .from-gray-[100|200|300|400|500|600|700|800|900]
-- .from-red-[100|200|300|400|500|600|700|800|900]
-- .from-orange-[100|200|300|400|500|600|700|800|900]
-- .from-yellow-[100|200|300|400|500|600|700|800|900]
-- .from-green-[100|200|300|400|500|600|700|800|900]
-- .from-teal-[100|200|300|400|500|600|700|800|900]
-- .from-blue-[100|200|300|400|500|600|700|800|900]
-- .from-indigo-[100|200|300|400|500|600|700|800|900]
-- .from-purple-[100|200|300|400|500|600|700|800|900]
-- .from-pink-[100|200|300|400|500|600|700|800|900]
-- .via-[transparent|current|black|white]
-- .via-gray-[100|200|300|400|500|600|700|800|900]
-- .via-red-[100|200|300|400|500|600|700|800|900]
-- .via-orange-[100|200|300|400|500|600|700|800|900]
-- .via-yellow-[100|200|300|400|500|600|700|800|900]
-- .via-green-[100|200|300|400|500|600|700|800|900]
-- .via-teal-[100|200|300|400|500|600|700|800|900]
-- .via-blue-[100|200|300|400|500|600|700|800|900]
-- .via-indigo-[100|200|300|400|500|600|700|800|900]
-- .via-purple-[100|200|300|400|500|600|700|800|900]
-- .via-pink-[100|200|300|400|500|600|700|800|900]
-- .to-[transparent|current|black|white]
-- .to-gray-[100|200|300|400|500|600|700|800|900]
-- .to-red-[100|200|300|400|500|600|700|800|900]
-- .to-orange-[100|200|300|400|500|600|700|800|900]
-- .to-yellow-[100|200|300|400|500|600|700|800|900]
-- .to-green-[100|200|300|400|500|600|700|800|900]
-- .to-teal-[100|200|300|400|500|600|700|800|900]
-- .to-blue-[100|200|300|400|500|600|700|800|900]
-- .to-indigo-[100|200|300|400|500|600|700|800|900]
-- .to-purple-[100|200|300|400|500|600|700|800|900]
-- .to-pink-[100|200|300|400|500|600|700|800|900]
+- .[from|via|to]-[transparent|current|black|white]
+- .[from|via|to]-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
 
 ### BORDERS
 
 **Border Radius**
 
 - .rounded
-- .rounded-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-t-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-r-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-b-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-l-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-tl-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-tr-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-bl-[none|sm|md|lg|xl|2xl|3xl|full]
-- .rounded-br-[none|sm|md|lg|xl|2xl|3xl|full]
-
+- .rounded-[  |none|sm|md|lg|xl|2xl|3xl|full]
+- .rounded-[r|l]-[none|sm|md|lg|xl|2xl|3xl|full]
+- .rounded-[t|b][  |r|l]-[none|sm|md|lg|xl|2xl|3xl|full]
+- 
 **Border Width**
 
-- .border
-- .border-[0|2|4|8]
-- .border-[t|r|b|l]
-- .border-t-[0|2|4|8]
-- .border-r-[0|2|4|8]
-- .border-b-[0|2|4|8]
-- .border-l-[0|2|4|8]
+- .border-[  |x|y|t|r|b|l]-[  |0|2|4|8]
 
 **Border Color**
 
-- .border-[transparent|current|black|white]
-- .border-gray-[100|200|300|400|500|600|700|800|900]
-- .border-red-[100|200|300|400|500|600|700|800|900]
-- .border-orange-[100|200|300|400|500|600|700|800|900]
-- .border-yellow-[100|200|300|400|500|600|700|800|900]
-- .border-green-[100|200|300|400|500|600|700|800|900]
-- .border-teal-[100|200|300|400|500|600|700|800|900]
-- .border-blue-[100|200|300|400|500|600|700|800|900]
-- .border-indigo-[100|200|300|400|500|600|700|800|900]
-- .border-purple-[100|200|300|400|500|600|700|800|900]
-- .border-pink-[100|200|300|400|500|600|700|800|900]
-
-**Border Opacity**
-
-- .border-opacity-[0|25|50|75|100]
+- .border-[inherit|current|transparent|black|white]
+- .border-[  |x|y|t|r|b|l]-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
 
 **Border Style**
 
-- .border-[solid|dashed|dotted|double|none]
+- .border-[solid|dashed|dotted|double|hidden|none]
 
 **Divide Width**
 
-- .divide-[x|y]
-- .divide-x-[0|2|4|8|reverse]
-- .divide-y-[0|2|4|8|reverse]
+- .divide-[x|y]-[  |0|2|4|8|reverse]
 
 **Divide Color**
 
-- .divide-[transparent|current|black|white]
-- .divide-gray-[100|200|300|400|500|600|700|800|900]
-- .divide-red-[100|200|300|400|500|600|700|800|900]
-- .divide-orange-[100|200|300|400|500|600|700|800|900]
-- .divide-yellow-[100|200|300|400|500|600|700|800|900]
-- .divide-green-[100|200|300|400|500|600|700|800|900]
-- .divide-teal-[100|200|300|400|500|600|700|800|900]
-- .divide-blue-[100|200|300|400|500|600|700|800|900]
-- .divide-indigo-[100|200|300|400|500|600|700|800|900]
-- .divide-purple-[100|200|300|400|500|600|700|800|900]
-- .divide-pink-[100|200|300|400|500|600|700|800|900]
-
-**Divide Opacity**
-
-- .divide-opacity-[0|25|50|75|100]
+- .divide-[inherit|current|transparent|black|white]
+- .divide-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
 
 **Divide Style**
 
 - .divide-[solid|dashed|dotted|double|none]
 
-### TABLES
+**Outline Width**
 
-**Border Collapse**
+- .outline-[0|1|2|4|8]
 
-- .border-[collapse|seperate]
+**Outline Color**
 
-**Table Layout**
+- .outline-[inherit|current|transparent|black|white]
+- .outline-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
 
-- .table-[auto|fixed]
+**Outline Style**
+
+- .outline-[  |dashed|dotted|double|hidden|none]
+
+**Outline Offset**
+
+- .outline-offset-[0|1|2|4|8]
+
+**Ring Width**
+
+- .ring-[0|1|2|  |4|8|inset]
+
+**Ring Color**
+
+- .ring-[inherit|current|transparent|black|white]
+- .ring-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+
+**Ring Offset Width**
+
+- .ring-offset-[0|1|2|4|8]
+
+**Ring Offset Color**
+
+- .ring-offset-[inherit|current|transparent|black|white]
+- .ring-offset-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+
 
 ### EFFECTS
 
 **Box Shadow**
 
-- .shadow
-- .shadow-[xs|sm|md|lg|xl|2xl|inner|outline|none]
+- .shadow-[sm|  |md|lg|xl|2xl|inner|none]
+
+**Box Shadow Color**
+
+- .shadow-[inherit|current|transparent|black|white]
+- .shadow-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
 
 **Opacity**
 
-- .opacity-[0|25|50|75|100]
+- .opacity-[0|5|10|20|25|30|40|50|60|70|75|80|90|95|100]
+
+
+**Mix Blend Mode**
+
+- . mix-blend-[multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion]
+
+**Background Blend Mode**
+
+- . bg-blend-[normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]
+
+### Filter
+
+**(Backdrop) Blur**
+
+- .[  |backdrop]-blur-[none|sm|  |md|lg|xl|2xl|3xl]
+
+**(Backdrop) Brightness**
+
+- .[  |backdrop]-brightness-[0|50|75|90|95|100|105|110|125|150|200]
+
+**(Backdrop) Contrast**
+
+- .[  |backdrop]-contrast-[0|50|75|100|125|150|200]
+
+**(Backdrop) Drop Shadow**
+
+- .[  |backdrop]-drop-shadow-[sm|  |md|lg|xl|2xl|none]
+
+**(Backdrop) Grayscale**
+
+- .[  |backdrop]-grayscale-[  |0]
+
+**(Backdrop) Hue Rotate**
+
+- .[  |backdrop]-hue-rotate-[0|15|30|60|90|180]
+
+**(Backdrop) Invert**
+
+- .[  |backdrop]-invert-[  |0]
+
+**(Backdrop) Saturate**
+
+- .[  |backdrop]-saturate-[0|50|100|150|200]
+
+**(Backdrop) Sepia**
+
+- .[  |backdrop]-sepia-[  |0]
+
+
+
+### TABLES
+
+**Border Collapse**
+
+- .border-[collapse|separate]
+
+**Table Layout**
+
+- .table-[auto|fixed]
+
+
 
 ### TRANSITIONS AND ANIMATION
 
 **Transition Property**
 
-- .transition
-- .transition-[none|all|colors|opacity|shadow|transform]
+- .transition-[none|all|  |colors|opacity|shadow|transform]
 
 **Transition Duration**
 
@@ -630,42 +609,33 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Scale**
 
-- .scale-[0|50|75|90|95|100|105|110|125|150]
-- .scale-x-[0|50|75|90|95|100|105|110|125|150]
-- .scale-y-[0|50|75|90|95|100|105|110|125|150]
+- .[  | - ]scale-[  |x|y]-[0|50|75|90|95|100|105|110|125|150]
 
 **Rotate**
 
-- .rotate-[0|1|2|3|6|12|45|90|180]
-- .-rotate-[1|2|3|6|12|45|90|180]
+- .[  | - ]rotate-[0|1|2|3|6|12|45|90|180]
 
 **Translate**
 
-- .translate-x-[0|1|2|3|4|5|6|7|8|10|12|16|20|24|32|40|48|56|64|px|full|1/2]
-- .-translate-x-[1|2|3|4|5|6|7|8|10|12|16|20|24|32|40|48|56|64|px|full|1/2]
-- .translate-y-[0|1|2|3|4|5|6|7|8|10|12|16|20|24|32|40|48|56|64|px|full|1/2]
-- .-translate-y-[1|2|3|4|5|6|7|8|10|12|16|20|24|32|40|48|56|64|px|full|1/2]
+- .[  | - ]translate-[x|y]-[*themeSpacing-0_96*|n/2|n/3|n/4|full]
 
 **Skew**
 
-- .skew-x-[0|1|2|3|6|12]
-- .-skew-x-[1|2|3|6|12]
-- .skew-y-[0|1|2|3|6|12]
-- .-skew-x-[1|2|3|6|12]
+- .[  | - ]skew-[x|y]-[0|1|2|3|6|12]
 
 **Transform Origin**
 
-- .origin-center
-- .origin-top
-- .origin-top-right
-- .origin-right
-- .origin-bottom-right
-- .origin-bottom
-- .origin-bottom-left
-- .origin-left
-- .origin-top-left
+- .origin-[right|center|left]
+- .origin-[top|bottom]-[right|left]
+
 
 ### INTERACTIVITY
+
+**Accent Color**
+
+- .accent-[inherit|current|transparent|black|white]
+- .accent-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .accent-auto
 
 **Appearance**
 
@@ -673,11 +643,14 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Cursor**
 
-- .cursor-[auto|default|pointer|wait|text|move|not-allowed]
+- .cursor-[auto|default|pointer|wait|text|move|help|not-allowed|none|context-menu|progress|cell|crosshair|vertical-text|alias|copy|no-drop|grab|grabbing|all-scroll]
+- .cursor-[auto|col|row|n|e|s|w|ne|nw|se|sw|ew|ns|nesw|nwse]-resize
+- .cursor-zoom-[in|out]
 
-**Outline**
+**Caret Color**
 
-- .outline-[none|white|black]
+- .caret-[inherit|current|transparent|black|white]
+- .caret-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
 
 **Pointer Events**
 
@@ -685,22 +658,57 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Resize**
 
-- .resize
-- .resize-[none|y|x]
+- .resize-[none|y|x|  ]
+
+**Scroll Behavior**
+
+- .scroll-[auto|smooth]
+
+**Scroll Margin**
+
+- .scroll-m[  |x|y|t|r|b|l]-[*themeSpacing-0_96*]
+
+**Scroll Padding**
+
+- .scroll-p[  |x|y|t|r|b|l]-[*themeSpacing-0_96*]
+
+**Scroll Snap Align**
+
+- .snap-[start|end|center|align-none]
+
+**Scroll Snap Stop**
+
+- .snap-[none|x|y|both|mandatory|proximity]
+
+**Scroll Snap Stop**
+
+- .snap-[normal|always]
+
+**Touch Action**
+
+- .touch-[auto|none|pinch-zoom|manipulation]
+- .touch-pan-[x|left|right|y|up|down]
 
 **User Select**
 
 - .select-[none|text|all|auto]
 
+**Will Change**
+
+- .will-change-[auto|scroll|contents|transform]
+
 ### SVG
 
 **Fill**
 
-- .fill-current
+- .fill-[inherit|current|transparent|black|white]
+- .fill-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
 
 **Stroke**
 
-- .stroke-current
+- .stroke-[inherit|current|transparent|black|white]
+- .stroke-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
+
 
 **Stroke Width**
 
@@ -710,5 +718,5 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Screen Readers**
 
-- .sr-only
-- .not-sr-only
+- .[  |not]-sr-only
+
