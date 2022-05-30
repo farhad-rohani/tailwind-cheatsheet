@@ -303,37 +303,6 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 - .list-[inside|outside]
 
-[//]: # (**Placeholder Color**)
-
-[//]: # ()
-[//]: # (- .placeholder-[transparent|current|black|white])
-
-[//]: # (- .placeholder-gray-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-red-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-orange-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-yellow-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-green-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-teal-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-blue-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-indigo-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-purple-[100|200|300|400|500|600|700|800|900])
-
-[//]: # (- .placeholder-pink-[100|200|300|400|500|600|700|800|900])
-
-[//]: # ()
-[//]: # (**Placeholder Opacity**)
-
-[//]: # ()
-[//]: # (- .placeholder-opacity-[0|25|50|75|100])
-
 **Text Align**
 
 - .text-[left|center|right|justify]
