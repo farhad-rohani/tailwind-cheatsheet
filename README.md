@@ -5,7 +5,7 @@ This README contains a complete list of the TailwindCSS class names for a quick 
 
 There is also a more condensed, printable one-page jpg version:
 
-![Printable TailwindCSS Cheatsheet](https://github.com/gojutin/tailwindcss-cheatsheet/blob/main/printable-tailwindcss-cheatsheet.jpg?raw=true)
+![Printable TailwindCSS Cheatsheet](https://github.com/farhad321/tailwind-cheatsheet/blob/main/TailwindCSS%20Cheatsheet.jpg)
 
 ## Default Config
 
