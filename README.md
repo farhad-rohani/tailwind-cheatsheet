@@ -12,14 +12,23 @@ There is also a more condensed, printable one-page jpg version:
 
 [View the TailwindCSS default configuration](https://github.com/tailwindlabs/tailwindcss/blob/v1/stubs/defaultConfig.stub.js)
 
-Breakpoints: sm:640px | md:768px | lg:1024px | xl:1280px
+Breakpoints: 
+sm:640px | md:768px | lg:1024px | xl:1280px | 2xl:1536px
 
-Colors: transparent, current, black, white, grays, reds, oranges, yellows, greens, teals, blues, indigos, purples, pinks
+Colors:
+inherit|current|transparent|black|white|slate|gray|zinc|neutral|stone|red|orange
+|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose
 
-Spacing: 0|1|2|3|4|5|6|8|10|12|16|20|24|32|40|48|56|64|px
+Spacing:
+px|0|0|1|1|2|2|3|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96
 
-Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hover|focus|active|visited|disabled|motion-safe|motion-reduce
-
+modifiers :
+hover|focus|focus-within|focus-visible|active|visited|target|first|last|only|odd|even|first-of-type|last-of-type|only-of-type|empty
+disabled|checked|indeterminate|default|required|valid|invalid|in-range|out-of-range|placeholder-shown|autofill|read-only
+open|before|after|first-letter|first-line|marker|selection|file|placeholder
+sm|md|lg|xl|2xl|dark|portrait|landscape|motion-safe|motion-reduce|print
+rtl|ltr
+group-{modifier}|peer-{modifier}
 ## Utility Classes
 
 ### LAYOUT
@@ -498,7 +507,8 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Background Blend Mode**
 
-- . bg-blend-[normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]
+- . bg-blend-[normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn
+|hard-light|soft-light|difference|exclusion|hue|saturation|color|luminosity]
 
 ### Filter
 
@@ -612,7 +622,8 @@ Supported Variants: responsive|group-hover|focus-within|first|last|odd|even|hove
 
 **Cursor**
 
-- .cursor-[auto|default|pointer|wait|text|move|help|not-allowed|none|context-menu|progress|cell|crosshair|vertical-text|alias|copy|no-drop|grab|grabbing|all-scroll]
+- .cursor-[auto|default|pointer|wait|text|move|help|not-allowed|none|context-menu
+|progress|cell|crosshair|vertical-text|alias|copy|no-drop|grab|grabbing|all-scroll]
 - .cursor-[auto|col|row|n|e|s|w|ne|nw|se|sw|ew|ns|nesw|nwse]-resize
 - .cursor-zoom-[in|out]
 
