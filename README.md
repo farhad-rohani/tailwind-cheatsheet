@@ -1,4 +1,4 @@
-# TailwindCSS Cheatsheet 
+# TailwindCSS Cheatsheet V3
 
 
 This README contains a complete list of the TailwindCSS class names for a quick reference.
