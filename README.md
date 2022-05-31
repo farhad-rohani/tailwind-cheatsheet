@@ -178,14 +178,18 @@ group-{modifier}|peer-{modifier}
 - .gap-[  |x|y]-[*themeSpacing-0_96*]
 
 ### BOX ALIGNMENT
-##(justify)=>(x) & (  |content)=>(y) & (place)=>(xy) 
-##content
+
+**(justify)=>(x) & (  |content)=>(y) & (place)=>(xy)** 
+
+**content**
 - .[justify|content]-[start|end|center|between|around|evenly]
 - .place-content-[start|end|center|between|around|evenly|stretch]
-##items
+
+**items**
 - .[justify|place]-items-[start|end|center|stretch]
 - .items-[start|end|center|stretch|baseline]
-##self
+
+**self**
 - .[justify|place]-self-[auto|start|end|center|stretch]
 - .self-[auto|start|end|center|stretch|baseline]
 
