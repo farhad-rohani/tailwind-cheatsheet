@@ -14,20 +14,27 @@ There is also a more condensed, printable one-page jpg version:
 Breakpoints: 
 sm:640px | md:768px | lg:1024px | xl:1280px | 2xl:1536px
 
-Colors:
-inherit|current|transparent|black|white|slate|gray|zinc|neutral|stone|red|orange
-|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose
-
 Spacing:
 px|0|0|1|1|2|2|3|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96
 
-modifiers :
+Modifiers :
 hover|focus|focus-within|focus-visible|active|visited|target|first|last|only|odd|even|first-of-type|last-of-type|only-of-type|empty
 disabled|checked|indeterminate|default|required|valid|invalid|in-range|out-of-range|placeholder-shown|autofill|read-only
 open|before|after|first-letter|first-line|marker|selection|file|placeholder
 sm|md|lg|xl|2xl|dark|portrait|landscape|motion-safe|motion-reduce|print
 rtl|ltr
 group-{modifier}|peer-{modifier}
+
+Colors:
+slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green
+|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose
+ColorWithOpacity :
+.Property-[transparent|current|black|white]
+.Property-[themeColors]-[50|100|200|300|400|500|600|700|800|900][  |/themeOpacity]
+Color :
+.Property-[transparent|current|black|white]
+.Property-[themeColors]-[50|100|200|300|400|500|600|700|800|900]
+
 ## Utility Classes
 
 ### LAYOUT
@@ -110,8 +117,6 @@ group-{modifier}|peer-{modifier}
 - .z-[0|10|20|30|40|50|auto]
 
 ### FLEXBOX
-
-> Make sure to use the `.flex` class with the classes below!
 
 **Flex Basis**
 
@@ -321,8 +326,7 @@ group-{modifier}|peer-{modifier}
 
 **Text Color**
 
-- .text-[transparent|current|black|white]
-- .text-[*themeColors*]-[100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .text-[*themeColorWithOpacity*]
 
 **Text Decoration**
 
@@ -331,7 +335,7 @@ group-{modifier}|peer-{modifier}
 
 **Text Decoration Color**
 
-- .decoration-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
+- .decoration-[*themeColor*]
 
 **Text Decoration Style**
 
@@ -345,7 +349,6 @@ group-{modifier}|peer-{modifier}
 
 - .underline-offset-[auto|0|1|2|4|8]
 
-
 **Text Transform**
 
 - .[upper|lower|normal-]case
@@ -354,7 +357,6 @@ group-{modifier}|peer-{modifier}
 **Text Indent**
 
 - .indent-[*themeSpacing-0_96*]
-
 
 **Vertical Align**
 
@@ -372,7 +374,6 @@ group-{modifier}|peer-{modifier}
 
 - .content-none
 
-
 ### BACKGROUNDS
 
 **Background Attachment**
@@ -385,8 +386,7 @@ group-{modifier}|peer-{modifier}
 
 **Background Color**
 
-- .bg-[inherit|transparent|current|black|white]
-- .bg-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .bg-[*themeColorWithOpacity*]
 
 **Background Origin**
 
@@ -414,26 +414,23 @@ group-{modifier}|peer-{modifier}
 
 **Gradient Color Stops**
 
-- .[from|via|to]-[transparent|current|black|white]
-- .[from|via|to]-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
+- .[from|via|to]-[*themeColor*]
 
 ### BORDERS
 
 **Border Radius**
 
-- .rounded
 - .rounded-[  |none|sm|md|lg|xl|2xl|3xl|full]
 - .rounded-[r|l]-[none|sm|md|lg|xl|2xl|3xl|full]
 - .rounded-[t|b][  |r|l]-[none|sm|md|lg|xl|2xl|3xl|full]
-- 
+
 **Border Width**
 
 - .border-[  |x|y|t|r|b|l]-[  |0|2|4|8]
 
 **Border Color**
 
-- .border-[inherit|current|transparent|black|white]
-- .border-[  |x|y|t|r|b|l]-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .border-[*themeColorWithOpacity*]
 
 **Border Style**
 
@@ -445,8 +442,7 @@ group-{modifier}|peer-{modifier}
 
 **Divide Color**
 
-- .divide-[inherit|current|transparent|black|white]
-- .divide-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .divide-[*themeColorWithOpacity*]
 
 **Divide Style**
 
@@ -458,8 +454,7 @@ group-{modifier}|peer-{modifier}
 
 **Outline Color**
 
-- .outline-[inherit|current|transparent|black|white]
-- .outline-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .outline-[*themeColorWithOpacity*]
 
 **Outline Style**
 
@@ -475,8 +470,7 @@ group-{modifier}|peer-{modifier}
 
 **Ring Color**
 
-- .ring-[inherit|current|transparent|black|white]
-- .ring-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .ring-[*themeColorWithOpacity*]
 
 **Ring Offset Width**
 
@@ -484,8 +478,7 @@ group-{modifier}|peer-{modifier}
 
 **Ring Offset Color**
 
-- .ring-offset-[inherit|current|transparent|black|white]
-- .ring-offset-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .ring-offset-[*themeColorWithOpacity*]
 
 
 ### EFFECTS
@@ -496,8 +489,7 @@ group-{modifier}|peer-{modifier}
 
 **Box Shadow Color**
 
-- .shadow-[inherit|current|transparent|black|white]
-- .shadow-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .shadow-[*themeColorWithOpacity*]
 
 **Opacity**
 
@@ -506,7 +498,8 @@ group-{modifier}|peer-{modifier}
 
 **Mix Blend Mode**
 
-- . mix-blend-[multiply|screen|overlay|darken|lighten|color-dodge|color-burn|hard-light|soft-light|difference|exclusion]
+- . mix-blend-[multiply|screen|overlay|darken|lighten|color-dodge
+|color-burn|hard-light|soft-light|difference|exclusion]
 
 **Background Blend Mode**
 
@@ -551,8 +544,6 @@ group-{modifier}|peer-{modifier}
 
 - .[  |backdrop]-sepia-[  |0]
 
-
-
 ### TABLES
 
 **Border Collapse**
@@ -562,8 +553,6 @@ group-{modifier}|peer-{modifier}
 **Table Layout**
 
 - .table-[auto|fixed]
-
-
 
 ### TRANSITIONS AND ANIMATION
 
@@ -610,13 +599,11 @@ group-{modifier}|peer-{modifier}
 - .origin-[right|center|left]
 - .origin-[top|bottom]-[right|left]
 
-
 ### INTERACTIVITY
 
 **Accent Color**
 
-- .accent-[inherit|current|transparent|black|white]
-- .accent-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900][  |/*themeOpacity*]
+- .accent-[*themeColorWithOpacity*]
 - .accent-auto
 
 **Appearance**
@@ -632,8 +619,7 @@ group-{modifier}|peer-{modifier}
 
 **Caret Color**
 
-- .caret-[inherit|current|transparent|black|white]
-- .caret-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
+- .caret-[*themeColorWithOpacity*]
 
 **Pointer Events**
 
@@ -684,14 +670,11 @@ group-{modifier}|peer-{modifier}
 
 **Fill**
 
-- .fill-[inherit|current|transparent|black|white]
-- .fill-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
+- .fill-[*themeColor*]
 
 **Stroke**
 
-- .stroke-[inherit|current|transparent|black|white]
-- .stroke-[*themeColors*]-[50|100|200|300|400|500|600|700|800|900]
-
+- .stroke-[*themeColor*]
 
 **Stroke Width**
 
