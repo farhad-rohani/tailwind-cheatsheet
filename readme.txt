@@ -7,7 +7,7 @@ There is also a more condensed, printable one-page jpg version:
 Breakpoints:
 sm:640px | md:768px | lg:1024px | xl:1280px | 2xl:1536px
 Spacing:
-px|0|0|1|1|2|2|3|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96
+px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|96
 Modifiers :
 hover|focus|focus-within|focus-visible|active|visited|target|first|last|only|odd|even|first-of-type|last-of-type|only-of-type|empty
 disabled|checked|indeterminate|default|required|valid|invalid|in-range|out-of-range|placeholder-shown|autofill|read-only
