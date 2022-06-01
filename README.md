@@ -11,7 +11,7 @@ There is also a more condensed, printable one-page jpg version:
 
 [View the TailwindCSS default configuration](https://github.com/tailwindlabs/tailwindcss/blob/v1/stubs/defaultConfig.stub.js)
 
-**Breakpoints**
+**[Breakpoints](https://tailwindcss.com/docs/screens)**
 
 sm:640px | md:768px | lg:1024px | xl:1280px | 2xl:1536px
 
@@ -111,8 +111,8 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Top / Right / Bottom / Left**
 
-- .inset-[  |x|y]-[*themeSpacing-0_96*|auto|1/2|1/3|2/3|1/4|2/4|3/4|full]
-- .[top|right|bottom|left]-[*themeSpacing-0_96*|auto|1/2|1/3|2/3|1/4|2/4|3/4|full]
+- .inset-[  |x|y]-[*themeSpacing*|auto|1/2|1/3|2/3|1/4|2/4|3/4|full]
+- .[top|right|bottom|left]-[*themeSpacing*|auto|1/2|1/3|2/3|1/4|2/4|3/4|full]
 
 **Visibility**
 
@@ -126,7 +126,7 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Flex Basis**
 
-- .basis-[*themeSpacing-0_96*|auto|n/2|n/3|n/4|n/5|n/6|n/12|full]
+- .basis-[*themeSpacing*|auto|n/2|n/3|n/4|n/5|n/6|n/12|full]
 
 **Flex Direction**
 
@@ -185,7 +185,7 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Gap**
 
-- .gap-[  |x|y]-[*themeSpacing-0_96*]
+- .gap-[  |x|y]-[*themeSpacing*]
 
 ### BOX ALIGNMENT
 
@@ -243,23 +243,23 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Padding**
 
-- .p[  |y|x|t|r|b|l]-[*themeSpacing-0_96*]
+- .p[  |y|x|t|r|b|l]-[*themeSpacing*]
 
 **Margin**
 
-- .m[  |y|x|t|r|b|l]-[*themeSpacing-0_96*|auto]
-- .-m[  |y|x|t|r|b|l]-[*themeSpacing-0_96*]
+- .m[  |y|x|t|r|b|l]-[*themeSpacing*|auto]
+- .-m[  |y|x|t|r|b|l]-[*themeSpacing*]
 
 **Space Between**
 
-- .space-[x|y]-[*themeSpacing-0_96*|reverse]
-- .-space-[x|y]-[*themeSpacing-0_96*]
+- .space-[x|y]-[*themeSpacing*|reverse]
+- .-space-[x|y]-[*themeSpacing*]
 
 ### SIZING
 
 **Width**
 
-- .w-[*themeSpacing-0_96*|auto|n/2|n/3|n/4|n/5|n/6|n/12|full|screen|min|max|fit]
+- .w-[*themeSpacing*|auto|n/2|n/3|n/4|n/5|n/6|n/12|full|screen|min|max|fit]
 
 **Min-Width**
 
@@ -272,7 +272,7 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Height**
 
-- .h-[*themeSpacing-0_96*|auto|n/2|n/3|n/4|n/5|n/6|full|screen|min|max|fit]
+- .h-[*themeSpacing*|auto|n/2|n/3|n/4|n/5|n/6|full|screen|min|max|fit]
 
 **Min-Height**
 
@@ -280,7 +280,7 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Max-Height**
 
-- .max-h-[*themeSpacing-0_96*|full|screen|min|max|fit]
+- .max-h-[*themeSpacing*|full|screen|min|max|fit]
 
 ### TYPOGRAPHY
 
@@ -362,7 +362,7 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Text Indent**
 
-- .indent-[*themeSpacing-0_96*]
+- .indent-[*themeSpacing*]
 
 **Vertical Align**
 
@@ -594,7 +594,7 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Translate**
 
-- .[  | - ]translate-[x|y]-[*themeSpacing-0_96*|n/2|n/3|n/4|full]
+- .[  | - ]translate-[x|y]-[*themeSpacing*|n/2|n/3|n/4|full]
 
 **Skew**
 
@@ -641,11 +641,11 @@ px|0|1|2|3|4|5|6|7|8|9|10|11|12|14|16|20|24|28|32|36|40|44|48|52|56|60|64|72|80|
 
 **Scroll Margin**
 
-- .scroll-m[  |x|y|t|r|b|l]-[*themeSpacing-0_96*]
+- .scroll-m[  |x|y|t|r|b|l]-[*themeSpacing*]
 
 **Scroll Padding**
 
-- .scroll-p[  |x|y|t|r|b|l]-[*themeSpacing-0_96*]
+- .scroll-p[  |x|y|t|r|b|l]-[*themeSpacing*]
 
 **Scroll Snap Align**
 
