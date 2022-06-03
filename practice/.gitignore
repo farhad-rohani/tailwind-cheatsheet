@@ -1,4 +1,5 @@
 .DS_Store
-/src/*.mkv
+/src/**/*.mkv
 /src/makefile.php
 /node_modules/
+/src/Accessibility/ScreenReaders*.mkv
