@@ -1,5 +1,5 @@
 .DS_Store
-/src/**/*.mkv
+/src/*.mkv
 /src/makefile.php
 /src/
 /node_modules/
