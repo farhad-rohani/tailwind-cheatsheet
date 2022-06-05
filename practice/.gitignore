@@ -1,3 +1,4 @@
 .DS_Store
 /src/**/*.mkv
+/src/**/*.psd
 /node_modules/
