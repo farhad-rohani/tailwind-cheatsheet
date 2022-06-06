@@ -61,7 +61,7 @@
         },
         mounted() {
             axios
-                .get('practice/src/list.json')
+                .get('./practice/src/list.json')
                 .then(response => (this.list = response.data))
         }
     }).mount('#app')
