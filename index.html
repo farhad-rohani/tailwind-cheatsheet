@@ -5,7 +5,7 @@
     <title>list trotual tailwind</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="practice/dist/output.css" rel="stylesheet">
-<!--        <script src="practice/live.js"></script>-->
+    <!--        <script src="practice/live.js"></script>-->
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
             integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
@@ -27,17 +27,19 @@
                 <div>
 
 
-                    <img src="practice/dist/img/image-1.jpg" class="rounded-t-lg" alt="">
-                    <!--                <iframe :src="cardItem.url"-->
-                    <!--                        class="rounded-t-lg w-full object-contain"-->
-                    <!--                        frameborder="0" allowfullscreen></iframe>-->
+                    <iframe v-if="cardItem.youtube" :src="cardItem.youtube"
+                            class="rounded-t-lg w-full object-contain"
+                            frameborder="0" allowfullscreen></iframe>
+                    <img v-else :src="'practice/src/'+item.Meta.id+'_'+key+'/'+cardItem.id+'_'+cardKey+'.jpg'"
+                         class="rounded-t-lg" alt="">
+                    <!--                    <img src="practice/dist/img/image-1.jpg" class="rounded-t-lg" alt="">-->
                 </div>
 
-                <a class=" text-center text-3xl " href="#">
+                <a class=" text-center text-3xl " :href="'practice/src/'+item.Meta.id+'_'+key+'/'+cardItem.id+'_'+cardKey+'.html'">
                     <div class="w-full bg-amber-200 my-2 py-2 whitespace-pre-wrap break-words">{{cardItem.name}}</div>
                 </a>
 
-                <a class=" text-center text-3xl " href="#">
+                <a class=" text-center text-3xl " :href="'practice/src/'+item.Meta.id+'_'+key+'/'+cardItem.id+'_'+cardKey+'.html'">
                     <div class="w-full bg-amber-200 my-2 py-2">practice</div>
                 </a>
                 <div :class="{'px-1':cardItem.id.length ==2,'px-2':cardItem.id.length ==1}" class="bg-blue-100 group-hover:bg-blue-100/70 border border-2 group-hover:border-blue-100 absolute bottom-0 bg-stone-300/80
@@ -63,6 +65,13 @@
             axios
                 .get('./practice/src/list.json')
                 .then(response => (this.list = response.data))
+        },
+        method: {
+            // a computed getter
+            path: function () {
+                // `this` points to the component instance
+                return 'aaaaaaaa';
+            }
         }
     }).mount('#app')
 </script>
